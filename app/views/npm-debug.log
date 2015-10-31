@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'boostrap' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose config Skipping project config: /Users/josephnam/.npmrc. (matches userconfig)
+5 verbose install initial load of /Users/josephnam/package.json
+6 verbose installManyTop reading scoped package data from /Users/josephnam/node_modules/appjs/package.json
+7 verbose installManyTop reading scoped package data from /Users/josephnam/node_modules/appjs-darwin/package.json
+8 verbose installManyTop reading scoped package data from /Users/josephnam/node_modules/jade/package.json
+9 info package.json appjs@0.0.20 No license field.
+10 info package.json appjs-darwin@0.0.19 No license field.
+11 verbose readDependencies loading dependencies from /Users/josephnam/package.json
+12 silly cache add args [ 'boostrap', null ]
+13 verbose cache add spec boostrap
+14 silly cache add parsed spec { raw: 'boostrap',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'boostrap',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: '*',
+14 silly cache add   type: 'range' }
+15 silly addNamed boostrap@*
+16 verbose addNamed "*" is a valid semver range for boostrap
+17 silly addNameRange { name: 'boostrap', range: '*', hasData: false }
+18 silly mapToRegistry name boostrap
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/boostrap
+22 verbose addNameRange registry:https://registry.npmjs.org/boostrap not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/boostrap
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 10:19:51 PM
+26 verbose request id 80de78d6190058eb
+27 http request GET https://registry.npmjs.org/boostrap
+28 http 404 https://registry.npmjs.org/boostrap
+29 verbose headers { 'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '2',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Sat, 31 Oct 2015 02:19:50 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '0',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-iad2143-IAD',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1446257990.828546,VS0,VE110' }
+30 silly get cb [ 404,
+30 silly get   { 'content-type': 'application/json',
+30 silly get     'cache-control': 'max-age=0',
+30 silly get     'content-length': '2',
+30 silly get     'accept-ranges': 'bytes',
+30 silly get     date: 'Sat, 31 Oct 2015 02:19:50 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     age: '0',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-iad2143-IAD',
+30 silly get     'x-cache': 'MISS',
+30 silly get     'x-cache-hits': '0',
+30 silly get     'x-timer': 'S1446257990.828546,VS0,VE110' } ]
+31 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/boostrap
+31 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+31 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+31 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+31 verbose stack     at Request.emit (events.js:110:17)
+31 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+31 verbose stack     at Request.emit (events.js:129:20)
+31 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+31 verbose stack     at IncomingMessage.emit (events.js:129:20)
+31 verbose stack     at _stream_readable.js:908:16
+31 verbose stack     at process._tickCallback (node.js:355:11)
+32 verbose statusCode 404
+33 verbose pkgid boostrap
+34 verbose cwd /Users/josephnam/Source/simple-form/app/views
+35 error Darwin 15.0.0
+36 error argv "node" "/usr/local/bin/npm" "install" "boostrap"
+37 error node v0.12.7
+38 error npm  v2.11.3
+39 error code E404
+40 error 404 Registry returned 404 for GET on https://registry.npmjs.org/boostrap
+40 error 404
+40 error 404 'boostrap' is not in the npm registry.
+40 error 404 You should bug the author to publish it (or use the name yourself!)
+40 error 404
+40 error 404 Note that you can also install from a
+40 error 404 tarball, folder, http url, or git url.
+41 verbose exit [ 1, true ]
